@@ -1,0 +1,138 @@
+[debug] [2020-08-22T06:14:18.113Z] ----------------------------------------------------------------------
+[debug] [2020-08-22T06:14:18.115Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mhmdh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-08-22T06:14:18.115Z] CLI Version:   8.9.0
+[debug] [2020-08-22T06:14:18.115Z] Platform:      win32
+[debug] [2020-08-22T06:14:18.115Z] Node Version:  v12.18.3
+[debug] [2020-08-22T06:14:18.116Z] Time:          Sat Aug 22 2020 10:44:18 GMT+0430 (Iran Daylight Time)
+[debug] [2020-08-22T06:14:18.116Z] ----------------------------------------------------------------------
+[debug] [2020-08-22T06:14:18.116Z] 
+[debug] [2020-08-22T06:14:18.122Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-22T06:14:18.123Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\mhmdh\Desktop\Singularity\singularity
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-08-22T06:14:27.275Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-08-22T06:14:27.276Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-08-22T06:14:27.838Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 22 Aug 2020 06:14:29 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-22T06:14:27.851Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-08-22T06:14:28.602Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 22 Aug 2020 06:14:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project singularity-97d43 (Singularity) 
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2020-08-22T06:14:40.300Z] >>> HTTP REQUEST GET https://singularity-97d43.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2020-08-22T06:14:41.642Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 22 Aug 2020 06:14:43 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-08-22T06:14:52.619Z] ----------------------------------------------------------------------
+[debug] [2020-08-22T06:14:52.621Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mhmdh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-08-22T06:14:52.621Z] CLI Version:   8.9.0
+[debug] [2020-08-22T06:14:52.621Z] Platform:      win32
+[debug] [2020-08-22T06:14:52.621Z] Node Version:  v12.18.3
+[debug] [2020-08-22T06:14:52.622Z] Time:          Sat Aug 22 2020 10:44:52 GMT+0430 (Iran Daylight Time)
+[debug] [2020-08-22T06:14:52.622Z] ----------------------------------------------------------------------
+[debug] [2020-08-22T06:14:52.622Z] 
+[debug] [2020-08-22T06:14:52.628Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-22T06:14:52.629Z] > authorizing via signed-in user
+[debug] [2020-08-22T06:14:52.629Z] [iam] checking project singularity-97d43 for permissions ["firebase.projects.get","firebasedatabase.instances.update"]
+[debug] [2020-08-22T06:14:52.632Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/singularity-97d43:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update"]}
+[debug] [2020-08-22T06:14:53.887Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 22 Aug 2020 06:14:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=622","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-22T06:14:53.892Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/singularity-97d43  
+ 
+[debug] [2020-08-22T06:14:54.509Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 22 Aug 2020 06:14:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'singularity-97d43'...
+[info] 
+[info] i  deploying database 
+[info] i  database: checking rules syntax... 
+[debug] [2020-08-22T06:14:54.532Z] >>> HTTP REQUEST PUT https://singularity-97d43.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2020-08-22T06:14:55.466Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 22 Aug 2020 06:14:56 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-08-22T06:15:00.669Z] ----------------------------------------------------------------------
+[debug] [2020-08-22T06:15:00.671Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mhmdh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-08-22T06:15:00.671Z] CLI Version:   8.9.0
+[debug] [2020-08-22T06:15:00.671Z] Platform:      win32
+[debug] [2020-08-22T06:15:00.671Z] Node Version:  v12.18.3
+[debug] [2020-08-22T06:15:00.672Z] Time:          Sat Aug 22 2020 10:45:00 GMT+0430 (Iran Daylight Time)
+[debug] [2020-08-22T06:15:00.672Z] ----------------------------------------------------------------------
+[debug] [2020-08-22T06:15:00.672Z] 
+[debug] [2020-08-22T06:15:00.679Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-22T06:15:00.680Z] > authorizing via signed-in user
+[debug] [2020-08-22T06:15:00.680Z] [iam] checking project singularity-97d43 for permissions ["firebase.projects.get","firebasedatabase.instances.update"]
+[debug] [2020-08-22T06:15:00.683Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/singularity-97d43:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update"]}
+[debug] [2020-08-22T06:15:01.783Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 22 Aug 2020 06:15:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=618","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-22T06:15:01.788Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/singularity-97d43  
+ 
+[debug] [2020-08-22T06:15:02.415Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 22 Aug 2020 06:15:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'singularity-97d43'...
+[info] 
+[info] i  deploying database 
+[info] i  database: checking rules syntax... 
+[debug] [2020-08-22T06:15:02.435Z] >>> HTTP REQUEST PUT https://singularity-97d43.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2020-08-22T06:15:03.389Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 22 Aug 2020 06:15:04 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2020-08-22T06:15:06.080Z] ----------------------------------------------------------------------
+[debug] [2020-08-22T06:15:06.082Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mhmdh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-08-22T06:15:06.083Z] CLI Version:   8.9.0
+[debug] [2020-08-22T06:15:06.083Z] Platform:      win32
+[debug] [2020-08-22T06:15:06.083Z] Node Version:  v12.18.3
+[debug] [2020-08-22T06:15:06.084Z] Time:          Sat Aug 22 2020 10:45:06 GMT+0430 (Iran Daylight Time)
+[debug] [2020-08-22T06:15:06.084Z] ----------------------------------------------------------------------
+[debug] [2020-08-22T06:15:06.084Z] 
+[debug] [2020-08-22T06:15:06.094Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-22T06:15:06.095Z] > authorizing via signed-in user
+[debug] [2020-08-22T06:15:06.096Z] [iam] checking project singularity-97d43 for permissions ["firebase.projects.get","firebasedatabase.instances.update"]
+[debug] [2020-08-22T06:15:06.099Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/singularity-97d43:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update"]}
+[debug] [2020-08-22T06:15:07.203Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 22 Aug 2020 06:15:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=618","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-22T06:15:07.208Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/singularity-97d43  
+ 
+[debug] [2020-08-22T06:15:07.808Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 22 Aug 2020 06:15:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'singularity-97d43'...
+[info] 
+[info] i  deploying database 
+[info] i  database: checking rules syntax... 
+[debug] [2020-08-22T06:15:07.826Z] >>> HTTP REQUEST PUT https://singularity-97d43.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2020-08-22T06:15:08.765Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 22 Aug 2020 06:15:10 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}

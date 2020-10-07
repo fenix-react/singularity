@@ -1,0 +1,191 @@
+.page {
+    display: flex;
+    flex-direction: row;
+}
+
+.halfPage1, .halfPage2 {
+    flex: 0.5;
+    width: 50vw;
+    height: 100vh;
+}
+.halfPage1 {
+    background: rgb(42,184,188);
+    background: linear-gradient(45deg, rgba(43,175,149,1) 37%, rgba(42,184,188,1) 83%);
+}
+.halfPage2 {
+    background: linear-gradient(150deg,#1e1e1e 37%, #363636 83%);;
+}
+.lang{
+    width: 25vw;
+    height: 5vh;
+    background: #bc4e9c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2baf95, rgba(0,0,0,0));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2baf95, rgba(0,0,0,0)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: row;
+}
+.line {
+    width: .1vw;
+    height: 3vh;
+    margin-top: 1vh;
+    background-color: yellowgreen;
+    margin-left: 0.7vw;
+}
+.link {
+    text-decoration: none;
+    margin-left: 2vw;
+    margin-top: 0.8vh;
+    color: white;
+}
+.link:hover {
+    color: black;
+}
+.active{
+    color: red
+}
+.LandCont{
+    width: 40vw;
+    height: 60vh;
+    margin-left: 5vw;
+    margin-top: 28vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contentCont {
+    display: flex;
+    flex-direction: row;
+    margin-left: 9vw;
+}
+.content {
+    cursor: default;
+    margin-left: 2vw;
+    font-size: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: white;
+}
+.icon {
+margin-top: 4.2vh;
+font-size: 2rem;
+color: white;
+font-weight: normal;
+}
+.titleCont {
+    width: 50vw;
+    height: 20vh;
+    background-color: #363636;
+    top: 20vh;
+    position: absolute;
+    text-align: center;
+}
+.title {
+    font-family: 'Gabriela', serif;
+    color: #2baf95;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-top: 3vh;
+    letter-spacing: .5vw;
+}
+.titleP {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    letter-spacing: .02rem;
+    color: white;
+    margin-top: -3vh;
+}
+.form {
+    width: 25vw;
+    height: 50vh;
+    position: absolute;
+    top: 45vh;
+    left: 63.5vw;
+}
+.userName {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+
+}
+.formIcon {
+    margin-left: 2vw;
+    color: #2baf95;
+    font-size: 1.3rem;
+}
+.input {
+    border: none;    
+    border-bottom: 1px solid #2baf95;
+    margin-left: 1vw;
+    width: 17vw;
+    color: #2baf95;
+    font-size: 2vh;
+    background-color: transparent;
+    padding-bottom: 1vh;
+    color: white
+}
+.input:focus {
+    border-bottom: 1px solid #2baf95;
+    color: #2baf95;
+    outline: none;
+    background-color: transparent;
+}
+.input::placeholder{
+    color: 363636;
+}
+.forgot {
+    text-decoration: underline;
+    color: #2baf95;
+    margin-left: 15vw;
+    font-size: 1.8vh;
+}
+.button {
+    margin-left: 2vw;
+    margin-top: 5vh;
+    border-radius: 8px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 20vw;
+    height: 7vh;
+    background-color: #2ab8bc;
+    text-align: center;
+    line-height: 7vh;
+    transition: 0.5s;
+    border: none
+}
+.button:hover {
+    background-color: #2baf95;
+    transition: .5s;
+    transform: translateY(-1vh);
+    border: none
+    /* box-shadow:  0 5px 0  #2ab8bc; */
+}
+.button:focus {
+    background-color: #2ab8bc;
+    transform: translateY(0);
+    box-shadow: none;
+    transition: .1s;
+    border: none !important;
+    outline: none;
+}
+.button:active {
+    background-color: #2ab8bc;
+    transform: translateY(0);
+    box-shadow: none;
+    transition: .1s;
+    border: none;
+    outline: none;
+}
+.register {
+    margin-top: 5vh;
+    margin-left: 5vw;
+    color: white;
+}
+.errorCont {
+    width: 30vw;
+    height: 10vh;
+    position: absolute; 
+    top: 40vh;
+    left: 68vw;
+}
+.error {
+    color: red
+}
