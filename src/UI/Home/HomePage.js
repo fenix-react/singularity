@@ -25,16 +25,17 @@ class HomePage extends Component {
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">HTML</a>
+                            <a href="/google.com">HTML</a>
                         </li>
                         <li>
-                            <a href="#">CSS</a>
+                            <a href="/dwa">CSS</a>
                         </li>
                         <li>
-                            <a href="#">SASS</a>
+                            <a href="/dawd">SASS</a>
                         </li>
                     </ul>
                 </nav>
+                <button className='btnr'>TESTING</button>
             </React.Fragment>
         )
     }
